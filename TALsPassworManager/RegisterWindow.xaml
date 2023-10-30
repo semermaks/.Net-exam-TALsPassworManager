@@ -1,0 +1,35 @@
+﻿<Window x:Class="TALsPassworManager.RegisterWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TALsPassworManager"
+        mc:Ignorable="d"
+         MinHeight="550" MinWidth="474" MaxHeight="550" MaxWidth="474" Icon="/TALs ico.png" Height="550" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Image Source="/background.jpg" Stretch="UniformToFill"/>
+        <Rectangle Fill="Black" Opacity="0.4"/>
+        <Label Content="Register window" HorizontalAlignment="Center"  Margin="0,18,0,0" VerticalAlignment="Top" Foreground="White" FontSize="35" FontFamily="Segoe UI Variable Text Semibold" />
+        <Grid Margin="0,0,0,56">
+            <Label Content="Your name: " VerticalAlignment="Center" HorizontalAlignment="Left" Margin="20,102,10,266" Foreground="White" FontSize="25" FontFamily="Segoe UI Variable Text Semibold"/>
+            <TextBox x:Name="TbName" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="160,102,10,276" Width="200" Opacity="0.7" Text="Name" FontSize="26" TextAlignment="Center" PreviewKeyUp="TbName_PreviewKeyUp" GotFocus="TbName_GotFocus" />
+
+            <Label Content="Your surname: " VerticalAlignment="Center" HorizontalAlignment="Left" Margin="20,102,10,176" Foreground="White" FontSize="25" FontFamily="Segoe UI Variable Text Semibold"/>
+            <TextBox x:Name="TbSurname" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="200,102,10,176" Width="200" Opacity="0.7" Text="Surname" FontSize="26" TextAlignment="Center" PreviewKeyUp ="TbSurname_PreviewKeyUp"/>
+
+            <Label Content="Your father name: " VerticalAlignment="Center" HorizontalAlignment="Left" Margin="20,102,10,86" Foreground="White" FontSize="25" FontFamily="Segoe UI Variable Text Semibold"/>
+            <TextBox x:Name="TbFatherName" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="240,102,10,86" Width="200" Opacity="0.7" Text="Father name" FontSize="26" TextAlignment="Center" PreviewKeyUp ="TbFatherName_PreviewKeyUp"/>
+
+            <Label Content="Date of Birthday: " VerticalAlignment="Center" HorizontalAlignment="Left" Margin="20,102,10,0" Foreground="White" FontSize="25" FontFamily="Segoe UI Variable Text Semibold"/>
+            <DatePicker Name="DateOFBirth" HorizontalAlignment="Left" Margin="240,268,0,0" VerticalAlignment="Top" Width="200" FontSize="18" Background="AliceBlue" Opacity="0.7" PreviewKeyUp ="DateOFBirth_PreviewKeyUp"/>
+
+            <Label Content="Your Logn: " VerticalAlignment="Center" HorizontalAlignment="Left" Margin="20,102,10,-90" Foreground="White" FontSize="25" FontFamily="Segoe UI Variable Text Semibold"/>
+            <TextBox x:Name="TbLogin" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="160,102,10,-90" Width="200" Opacity="0.7" Text="Login" FontSize="26" TextAlignment="Center" PreviewKeyUp ="TbLogin_PreviewKeyUp"/>
+
+            <Label Content="Your Password: " VerticalAlignment="Center" HorizontalAlignment="Left" Margin="20,102,10,-180" Foreground="White" FontSize="25" FontFamily="Segoe UI Variable Text Semibold"/>
+            <PasswordBox x:Name="Password" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="210,102,10,-180" Width="200" Opacity="0.7" FontSize="26"/>
+        </Grid>
+        <Button Content="Back" FontSize="26" HorizontalAlignment="Center" Margin="0,405,0,0" VerticalAlignment="Top" Height="42" Width="137"  FontFamily="Segoe UI Variable Text Semibold" Foreground="White" Background="{x:Null}" BorderBrush="White" BorderThickness="4" Click="Button_Click_1"/>
+        <Button x:Name="btn" Content="Register new account" FontSize="26" HorizontalAlignment="Left" Margin="63,455,0,0" VerticalAlignment="Top" Height="46" Width="337"  FontFamily="Segoe UI Variable Text Semibold" Foreground="White" Background="{x:Null}" BorderBrush="White" BorderThickness="4" Click="Button_Click"/>
+    </Grid>
+</Window>
